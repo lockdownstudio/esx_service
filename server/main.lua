@@ -49,7 +49,7 @@ end)
 ESX.RegisterServerCallback('esx_service:isInService', function(source, cb, name)
 	local isInService = false
 
-	if InService[name] ~= nil then -- checks if the job is activated for service
+	if InService[name] ~= nil then
 		if InService[name][source] then
 			isInService = true
 		end
